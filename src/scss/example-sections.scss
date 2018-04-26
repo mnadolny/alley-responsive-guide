@@ -1,26 +1,40 @@
 .example__section {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
 
   @media (min-width: 43.75rem) {
     flex-wrap: nowrap;
+    justify-content: space-between;
   }
 
   .container {
     background-color: #f6f6f6;
+    box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
-    padding: 20px;
-    box-sizing: border-box;
     height: 100%;
     overflow: hidden;
+    padding: 20px;
     position: relative;
   }
-}
 
-.example__area {
-  margin-right: 1rem;
+  .container__example {
+    background-color: red;
+    padding: 0 0.625rem;
+
+    @media (min-width: 43.75rem) {
+      padding: 0 1.5625rem;
+    }
+
+    &-content {
+      background-color: black;
+      display: block;
+      height: 100%;
+      min-height: 400px;
+      width: 100%;
+    }
+  }
 }
 
 .code__area {
@@ -37,7 +51,7 @@
   flex-shrink: 0;
 
   @media (min-width: 43.75rem) {
-    flex-basis: 50%;
+    flex-basis: 49%;
   }
 }
 

@@ -1,9 +1,11 @@
 .hamburger__icon,
 .search__icon {
-  display: flex;
-  width: 45px;
-  height: 45px;
+  appearance: none;
+  background: none;
   border: 1px dotted black;
+  display: flex;
+  height: 45px;
+  width: 45px;
 
   &:hover {
     cursor: pointer;
