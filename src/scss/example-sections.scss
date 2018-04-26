@@ -1,0 +1,49 @@
+.example__section {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+
+  @media (min-width: 43.75rem) {
+    flex-wrap: nowrap;
+  }
+
+  .container {
+    background-color: #f6f6f6;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    box-sizing: border-box;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+}
+
+.example__area {
+  margin-right: 1rem;
+}
+
+.code__area {
+  border: 1px solid gray;
+  box-sizing: border-box;
+  padding: 20px;
+  max-height: 460px;
+  overflow-y: scroll;
+}
+
+.example__area,
+.code__area {
+  flex-basis: 100%;
+  flex-shrink: 0;
+
+  @media (min-width: 43.75rem) {
+    flex-basis: 50%;
+  }
+}
+
+.example__heading {
+  font-size: 1rem;
+  font-weight: 800;
+  border-bottom: 1px solid #d8d8d8;
+  margin-bottom: 1.2rem;
+}
