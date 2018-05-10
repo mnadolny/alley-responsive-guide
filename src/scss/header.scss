@@ -1,0 +1,29 @@
+.header__logo {
+  flex: 0 0 125px;
+  margin-bottom: 20px;
+  @media (min-width: 43.75rem) {
+    flex: 0 0 10rem;
+  }
+}
+
+header {
+  align-items: baseline;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 60px;
+
+  @media (min-width: 43.75rem) {
+    flex-wrap: nowrap;
+  }
+}
+
+.header__title {
+  font-size: 1.625rem;
+  display: block;
+  width: 100%;
+
+  @media (min-width: 43.75rem) {
+    margin-left: auto;
+    width: auto;
+  }
+}
